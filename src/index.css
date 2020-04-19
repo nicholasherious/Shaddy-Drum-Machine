@@ -1,13 +1,51 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(34, 58, 78);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.drum-container {
+  background-image: url("https://nick-react-drum-machine.s3-us-west-2.amazonaws.com/assets/shaddybackground.jpg");
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.drum-display {
+  color: antiquewhite;
+  background-color: rgba(22, 102, 122, 0.548);
+  display: inline-block;
+  margin-top: 10px;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.1), 0 5px 2px 3px rgba(0,0,0,0.1);
+}
+
+.drum-pads-outer {
+  text-align: center;
+  display: inline-block;
+}
+
+.drum-pads {
+  display: inline-block;;
+}
+
+.drum-button {
+  background-color: rgb(191, 200, 209);
+  box-shadow:inset 0 -0.9em 0 -0.45em rgba(0, 0, 0, 0.678);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  color: rgb(233, 187, 181);
+  background:rgba(30, 112, 145, 0.795);
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 2px 1px 1px 0.5px rgba(0,0,0,0.2);
+  
+}
+
+.drum-button:hover {
+  background-color: rgba(233, 32, 92, 0.788);
+  box-shadow: 0 1px 3px rgba(131, 125, 125, 1.616),
+    0 1px 2px rgba(161, 159, 159, 0.811);
+  -webkit-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 2px 1px 1px 0.5px rgba(0,0,0,0.2);
 }
